@@ -20,6 +20,16 @@ summary: 包含多項新功能與增強功能。Cloud Volumes ONTAP
 
 
 
+== 不再支援的c4、m4和r4執行個體（2022年10月28日）
+
+在AWS中Cloud Volumes ONTAP 、不再支援C4、M4和R4 EC2執行個體類型。如果現有系統執行的是c4、m4或r4執行個體類型、則必須變更為c5、m5或R5執行個體系列中的執行個體類型。
+
+link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-change-ec2-instance.html["瞭解如何變更EC2執行個體類型Cloud Volumes ONTAP 以供使用"^]。
+
+請參閱 link:https://mysupport.netapp.com/info/communications/ECMLP2880231.html["NetApp支援"^] 以深入瞭解這些執行個體類型的終止可用度和支援。
+
+
+
 == 9.8 GA（2021年1月5日）
 
 目前已推出《通用版本Cloud Volumes ONTAP 》（GA）發行版的《更新版本》（英文）。GA版本包含錯誤修正。Cloud Manager會提示您將現有的9.8 RC1和9.7系統升級至此版本。
@@ -65,11 +75,11 @@ NOTE: 新增此核心磁碟後、使用這些執行個體類型的系統現在�
 
 除了所介紹的功能之外 https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508["部分9.8 ONTAP"^]、Cloud Volumes ONTAP 本版的《》包含下列內容：
 
-* <<High-availability pairs in Google Cloud>>
-* <<Fixes for Azure NIC detach events and maintenance events>>
-* <<High write speed with HA pairs in AWS and Azure>>
-* <<Support for up to 24 storage VMs in AWS>>
-* <<Core disk for single node systems in AWS>>
+*  pairs in Google Cloud
+*  for Azure NIC detach events and maintenance events
+*  write speed with HA pairs in AWS and Azure
+*  for up to 24 storage VMs in AWS
+*  disk for single node systems in AWS
 
 
 
@@ -114,7 +124,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-write-sp
 
 link:reference-limits-aws.html["深入瞭解儲存VM限制"]。
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-managing-svms-aws.html["瞭解如何在Cloud Volumes ONTAP AWS中建立資料服務儲存VM以供其使用"]。
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-managing-svms-aws.html["瞭解如何在Cloud Volumes ONTAP AWS中建立資料服務儲存VM以供其使用"^]。
 
 
 
@@ -145,11 +155,3 @@ http://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-updating-ont
 * 單一節點系統的升級可讓系統離線長達25分鐘、在此期間I/O會中斷。
 * 升級 HA 配對不中斷營運、而且 I/O 不中斷。在此不中斷營運的升級程序中、會同時升級每個節點、以繼續為用戶端提供 I/O 服務。
 
-
-
-
-=== c4、m4和r4執行個體類型
-
-從9.8版開始、新Cloud Volumes ONTAP 版的更新版不支援C4、M4和R4執行個體類型。如果您現有Cloud Volumes ONTAP 的某個執行於c4、m4或r4執行個體類型上的版本、您仍可升級至此版本。
-
-建議變更為c5、m5或R5執行個體系列中的執行個體類型。
