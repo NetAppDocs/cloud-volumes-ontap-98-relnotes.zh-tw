@@ -75,11 +75,11 @@ NOTE: 新增此核心磁碟後、使用這些執行個體類型的系統現在�
 
 除了所介紹的功能之外 https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508["部分9.8 ONTAP"^]、Cloud Volumes ONTAP 本版的《》包含下列內容：
 
-*  pairs in Google Cloud
-*  for Azure NIC detach events and maintenance events
-*  write speed with HA pairs in AWS and Azure
-*  for up to 24 storage VMs in AWS
-*  disk for single node systems in AWS
+* <<Google Cloud的高可用度配對>>
+* <<Azure NIC分離事件與維護事件的修正>>
+* <<AWS和Azure中的HA配對可提供高速寫入速度>>
+* <<在AWS中最多支援24個儲存VM>>
+* <<AWS單一節點系統的核心磁碟>>
 
 
 
